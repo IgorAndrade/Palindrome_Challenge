@@ -1,14 +1,14 @@
-let app = require("../config/express"),
+let app = require("../config/express")(),
     chai = require('chai'),
     request = require('supertest');
 
 let expect = chai.expect;
 
-xdescribe('test the palindrome function', function () {
+describe('test the palindrome function', function () {
     describe('palindrome words', function () {
 
         it('correct palindrome: ABA', function (done) {
-            request(app).get('/disPalindrome?test=ANA').expect(200, done)
+            request(app).get('/isPalindrome?test=ANA').expect(200, done)
         });
 
         it('correct palindrome: alula', function (done) {
