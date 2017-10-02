@@ -3,7 +3,7 @@ const { check, validationResult } = require('express-validator/check');
 module.exports = (app) => {
 
     app.get('/isPalindrome', [
-        check('test').exists(),
+        check('test').exists().not().isEmpty()
     ], function (req, res, next) {
         try {
             validationResult(req).throw();

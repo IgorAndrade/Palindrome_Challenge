@@ -19,4 +19,15 @@ describe('test the palindrome function', function () {
         });
     })
 
+    describe('param test', function () {
+        
+                it('not exist', function (done) {
+                    request(app).get('/isPalindrome').expect(422, done)
+                });
+        
+                it('empty', function (done) {
+                    request(app).get('/isPalindrome?test=').expect(422, done)
+                })
+               
+            })
 });
