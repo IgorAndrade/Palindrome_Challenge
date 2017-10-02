@@ -1,0 +1,28 @@
+{
+  "name": "palindrome_challenge",
+  "version": "1.0.0",
+  "description": "challenge of Shaw and Partners",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "palindrome"
+  ],
+  "author": "Igor Andrade",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.14.1",
+    "express-validator": "^4.2.1",
+    "ejs": "^2.5.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "supertest": "^3.0.0"
+  }
+}
